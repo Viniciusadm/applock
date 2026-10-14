@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">App Lock</string>
+    <string name="app_list_title">App Locker</string>
+    <string name="search_apps_hint">Pesquisar aplicativos</string>
+    <string name="clear_search">Limpar pesquisa</string>
+    <string name="empty_apps">Nenhum aplicativo encontrado</string>
+    <string name="block_app_description">Bloquear %1$s</string>
+
+    <string name="settings_action">Ajustes</string>
+    <string name="back_action">Voltar</string>
+
+    <string name="accessibility_service_label">App Locker</string>
+    <string name="accessibility_service_description">O App Locker usa este serviço para detectar quando um aplicativo bloqueado é aberto e exibir a tela de desbloqueio. Nenhum conteúdo de tela é lido nem enviado para a internet.</string>
+
+    <string name="setup_title">Diagnóstico</string>
+    <string name="setup_intro">Para o bloqueio funcionar de forma confiável, conclua os passos abaixo.</string>
+    <string name="setup_accessibility_title">1. Ativar acessibilidade</string>
+    <string name="setup_accessibility_desc">Ative em Configurações > Acessibilidade > App Locker para o bloqueio funcionar.</string>
+    <string name="setup_accessibility_button">Abrir configurações de acessibilidade</string>
+    <string name="setup_overlay_title">2. Sobrepor outros apps (recomendado no Android 12+)</string>
+    <string name="setup_overlay_desc">No Android 12 ou superior, esta permissão é o caminho confiável para exibir a tela de bloqueio sobre os outros aplicativos.</string>
+    <string name="setup_overlay_button">Permitir sobrepor outros apps</string>
+    <string name="setup_pin_title">3. Definir PIN</string>
+    <string name="setup_pin_desc">Usado para desbloquear quando a biometria não estiver disponível. Aceita de 4 a 8 dígitos.</string>
+    <string name="setup_pin_button_set">Definir PIN</string>
+    <string name="setup_pin_button_change">Alterar PIN</string>
+    <string name="setup_battery_title">4. Otimização de bateria</string>
+    <string name="setup_battery_desc">Desative a otimização de bateria para o App Locker para evitar que o sistema encerre o serviço.</string>
+    <string name="setup_battery_button">Abrir configurações de bateria</string>
+    <string name="setup_open_apps">Ver aplicativos</string>
+    <string name="status_enabled">Ativado</string>
+    <string name="status_disabled">Desativado</string>
+    <string name="status_granted">Concedido</string>
+    <string name="status_pin_set">Definido</string>
+    <string name="status_pin_unset">Não definido</string>
+    <string name="status_battery_ok">Otimização desativada</string>
+    <string name="status_battery_on">Otimização ativa</string>
+
+    <string name="compat_title">Ajustes do fabricante</string>
+    <string name="compat_app_settings_button">Abrir configurações do app</string>
+    <string name="compat_generic">Alguns fabricantes encerram apps em segundo plano. Se o bloqueio parar de funcionar, permita a execução em segundo plano e o início automático do App Locker nas configurações do sistema.</string>
+    <string name="compat_xiaomi">MIUI/HyperOS: ative \"Início automático\" para o App Locker e, em Bateria, defina \"Sem restrições\". Fixe o app nos recentes (ícone de cadeado).</string>
+    <string name="compat_huawei">EMUI/HarmonyOS: adicione o App Locker aos \"Apps protegidos\" e ative \"Início automático\" e \"Execução em segundo plano\".</string>
+    <string name="compat_samsung">One UI: em Bateria, desative \"Colocar app em suspensão\" e remova o App Locker dos \"Apps em suspensão\" e \"Apps em suspensão profunda\".</string>
+    <string name="compat_oppo">ColorOS: ative \"Início automático\" e permita atividade em segundo plano para o App Locker; defina a bateria como \"Não otimizar\".</string>
+    <string name="compat_realme">realme UI: ative \"Início automático\" e permita execução em segundo plano; defina a bateria do App Locker como \"Sem restrições\".</string>
+    <string name="compat_vivo">Funtouch/OriginOS: ative \"Início automático\" e permita consumo de energia em segundo plano para o App Locker.</string>
+    <string name="compat_oneplus">OxygenOS: defina a bateria do App Locker como \"Sem restrições\" e desative a otimização em segundo plano.</string>
+
+    <string name="pin_dialog_title">Definir PIN</string>
+    <string name="pin_enter">Digite o PIN</string>
+    <string name="pin_confirm">Confirme o PIN</string>
+    <string name="pin_mismatch">Os PINs não coincidem</string>
+    <string name="pin_too_short">Use pelo menos 4 dígitos</string>
+    <string name="pin_save">Salvar</string>
+    <string name="cancel">Cancelar</string>
+
+    <string name="critical_block_title">Bloquear app essencial?</string>
+    <string name="critical_block_message">%1$s é um aplicativo essencial do sistema (como Configurações ou a tela inicial). Se você bloqueá-lo e depois perder a biometria ou esquecer o PIN, pode ficar sem acesso ao aparelho. Bloquear mesmo assim?</string>
+    <string name="critical_block_confirm">Bloquear mesmo assim</string>
+
+    <string name="lock_message">Aplicativo bloqueado</string>
+    <string name="lock_biometric_button">Desbloquear com biometria</string>
+    <string name="lock_biometric_title">Desbloquear App Locker</string>
+    <string name="lock_biometric_subtitle">Confirme sua identidade para acessar o aplicativo</string>
+    <string name="lock_biometric_cancel">Usar PIN</string>
+    <string name="lock_pin_error">PIN incorreto</string>
+    <string name="lock_pin_submit">Desbloquear com PIN</string>
+    <string name="lock_pin_unset">Defina um PIN no App Locker para desbloquear sem biometria</string>
+
+    <string name="setup_protection_title">Proteger App Locker</string>
+    <string name="setup_protection_desc">Exige biometria ou PIN para abrir o App Locker e alterar suas configurações.</string>
+    <string name="setup_protection_needs_pin">Defina um PIN acima para ativar a proteção.</string>
+
+    <string name="settings_lock_title">Configurações protegidas</string>
+    <string name="settings_lock_subtitle">Confirme sua identidade para acessar as configurações do App Locker.</string>
+    <string name="settings_lock_enable_title">Ativar proteção</string>
+    <string name="settings_lock_enable_subtitle">Confirme sua identidade para proteger as configurações do App Locker.</string>
+    <string name="settings_lock_biometric_title">App Locker protegido</string>
+    <string name="settings_lock_biometric_subtitle">Confirme sua identidade para acessar as configurações</string>
+
+    <string name="app_locker_title">App Locker</string>
+    <string name="lock_protected_message">Este aplicativo está protegido.</string>
+
+    <string name="empty_no_results_title">Nenhum aplicativo encontrado</string>
+    <string name="empty_no_results_message">Tente ajustar o termo da pesquisa.</string>
+    <string name="empty_none_locked_title">Nenhum app bloqueado ainda</string>
+    <string name="empty_none_locked_message">Ative o botão ao lado de um aplicativo para protegê-lo com biometria ou PIN.</string>
+
+    <string name="snackbar_app_blocked">%1$s bloqueado</string>
+    <string name="snackbar_app_unblocked">%1$s desbloqueado</string>
+
+    <string name="cd_search">Pesquisar</string>
+    <string name="cd_settings">Configurações</string>
+    <string name="cd_lock">Bloqueado</string>
+    <string name="cd_shield">Proteção</string>
+    <string name="cd_clear_search">Limpar pesquisa</string>
+    <string name="cd_step_done">Concluído</string>
+    <string name="cd_step_pending">Pendente</string>
+
+    <string name="lock_control_title">App Locker Ativado</string>
+    <string name="lock_control_master_desc">Interruptor geral da proteção. Quando desligado, nenhum aplicativo é bloqueado. Quando ligado, o bloqueio volta a funcionar imediatamente.</string>
+    <string name="lock_control_needs_pin">Defina um PIN acima para poder exigir autenticação nas ações.</string>
+    <string name="lock_control_temp_active">Bloqueio temporário ativo até %1$s</string>
+    <string name="lock_control_lock_30">Bloquear 30 min</string>
+    <string name="lock_control_lock_60">Bloquear 1 hora</string>
+    <string name="lock_control_restore">Restaurar modo normal</string>
+    <string name="lock_control_require_auth_title">Exigir autenticação para desativar/restaurar</string>
+    <string name="lock_control_require_auth_desc">Pede biometria ou PIN antes de desativar a proteção ou restaurar o modo normal — tanto no app quanto em ações externas de automação.</string>
+
+    <string name="automation_label">Ação do App Locker</string>
+    <string name="automation_invalid_action">Ação do App Locker inválida</string>
+    <string name="automation_auth_title">Confirmar identidade</string>
+    <string name="automation_auth_subtitle">Confirme sua identidade para alterar a proteção do App Locker.</string>
+    <string name="automation_auth_unavailable">Configure biometria ou um PIN para executar esta ação.</string>
+    <string name="automation_toast_enabled">App Locker ativado</string>
+    <string name="automation_toast_disabled">App Locker desativado</string>
+    <string name="automation_toast_restored">Modo normal restaurado</string>
+    <string name="automation_toast_temp_locked">Bloqueio temporário por %1$d min</string>
+
+    <string name="shortcut_enable_short">Ativar</string>
+    <string name="shortcut_enable_long">Ativar App Locker</string>
+    <string name="shortcut_disable_short">Desativar</string>
+    <string name="shortcut_disable_long">Desativar App Locker</string>
+    <string name="shortcut_toggle_short">Alternar</string>
+    <string name="shortcut_toggle_long">Alternar App Locker</string>
+    <string name="shortcut_lock_30_short">Bloquear 30 min</string>
+    <string name="shortcut_lock_30_long">Bloquear por 30 minutos</string>
+    <string name="shortcut_lock_60_short">Bloquear 1 h</string>
+    <string name="shortcut_lock_60_long">Bloquear por 1 hora</string>
+    <string name="shortcut_restore_short">Restaurar</string>
+    <string name="shortcut_restore_long">Restaurar modo normal</string>
+</resources>

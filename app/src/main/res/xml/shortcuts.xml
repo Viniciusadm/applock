@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="applock_toggle"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/shortcut_toggle_short"
+        android:shortcutLongLabel="@string/shortcut_toggle_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="applock://action/toggle"
+            android:targetPackage="com.archieapps.applock"
+            android:targetClass="com.archieapps.applock.automation.AutomationActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="applock_disable"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/shortcut_disable_short"
+        android:shortcutLongLabel="@string/shortcut_disable_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="applock://action/disable"
+            android:targetPackage="com.archieapps.applock"
+            android:targetClass="com.archieapps.applock.automation.AutomationActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="applock_enable"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/shortcut_enable_short"
+        android:shortcutLongLabel="@string/shortcut_enable_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="applock://action/enable"
+            android:targetPackage="com.archieapps.applock"
+            android:targetClass="com.archieapps.applock.automation.AutomationActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="applock_lock_30"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/shortcut_lock_30_short"
+        android:shortcutLongLabel="@string/shortcut_lock_30_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="applock://action/lock?minutes=30"
+            android:targetPackage="com.archieapps.applock"
+            android:targetClass="com.archieapps.applock.automation.AutomationActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="applock_lock_60"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/shortcut_lock_60_short"
+        android:shortcutLongLabel="@string/shortcut_lock_60_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="applock://action/lock?minutes=60"
+            android:targetPackage="com.archieapps.applock"
+            android:targetClass="com.archieapps.applock.automation.AutomationActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="applock_restore"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/shortcut_restore_short"
+        android:shortcutLongLabel="@string/shortcut_restore_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="applock://action/restore"
+            android:targetPackage="com.archieapps.applock"
+            android:targetClass="com.archieapps.applock.automation.AutomationActivity" />
+    </shortcut>
+</shortcuts>
